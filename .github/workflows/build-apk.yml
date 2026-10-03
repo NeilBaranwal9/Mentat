@@ -1,0 +1,48 @@
+name: Build APK
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Decode keystore (stable signing, Section 15.2)
+        if: env.KEYSTORE_B64 != ''
+        run: echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/polymath.jks"
+      - name: Unit tests (domain engine)
+        run: chmod +x gradlew && ./gradlew testDebugUnitTest
+      - name: Secret scan (source)
+        run: |
+          if grep -rIn "gsk_" app/src; then echo "Groq key pattern found in source"; exit 1; fi
+      - name: Context-leak scan
+        run: |
+          if grep -rEn "(object|companion object)[^{]*\{[^}]*(Context|Activity|View)" app/src/main/java --include=*.kt | grep -v ApplicationContext; then
+            echo "Possible static context holder"; exit 1; fi
+      - name: Domain purity scan
+        run: |
+          if grep -rEn "^import android" app/src/main/java/com/polymath/os/domain; then echo "Android import in domain/"; exit 1; fi
+      - name: Build debug APK
+        run: ./gradlew assembleDebug
+        env:
+          KEYSTORE_PATH: ${{ runner.temp }}/polymath.jks
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      - name: Secret scan (APK)
+        run: |
+          mkdir apk_x && unzip -q app/build/outputs/apk/debug/*.apk -d apk_x
+          if grep -rIl "gsk_" apk_x; then echo "Groq key pattern found in APK"; exit 1; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: polymath-os-debug-apk
+          path: app/build/outputs/apk/debug/*.apk

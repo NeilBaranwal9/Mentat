@@ -1,0 +1,16 @@
+[
+  {"id": "c01", "requires": ["sketch", "probability"], "project": "Illustrated one-page guide to your favourite dice game's odds", "est_hours": 4},
+  {"id": "c02", "requires": ["sql", "probability"], "project": "Store 200 dice rolls in a table and check the frequencies with queries", "est_hours": 3},
+  {"id": "c03", "requires": ["sketch", "sql"], "project": "Hand-drawn chart poster of a month of your own data", "est_hours": 4},
+  {"id": "c04", "requires": ["python", "sql"], "project": "A small script that loads a CSV into SQLite and prints a weekly report", "est_hours": 5},
+  {"id": "c05", "requires": ["guitar", "music theory"], "project": "Write and record a 4-chord song with one key change", "est_hours": 5},
+  {"id": "c06", "requires": ["photography", "sketch"], "project": "Photo-to-sketch series: five photos and five matching drawings", "est_hours": 5},
+  {"id": "c07", "requires": ["cooking", "budget"], "project": "A one-week meal plan under a fixed budget with a shopping list", "est_hours": 3},
+  {"id": "c08", "requires": ["electronics", "programming"], "project": "A blinking LED pattern controlled by a small microcontroller program", "est_hours": 5},
+  {"id": "c09", "requires": ["writing", "photography"], "project": "A five-post photo essay about your neighbourhood", "est_hours": 5},
+  {"id": "c10", "requires": ["chess", "probability"], "project": "Track 30 of your games and analyse which openings you win with most", "est_hours": 4},
+  {"id": "c11", "requires": ["excel", "probability"], "project": "Simulate 1000 coin tosses in a spreadsheet and chart the running average", "est_hours": 3},
+  {"id": "c12", "requires": ["public speaking", "writing"], "project": "Write and deliver a 5-minute talk to two friends", "est_hours": 4},
+  {"id": "c13", "requires": ["soldering", "electronics"], "project": "Build and solder a small LED badge kit", "est_hours": 4},
+  {"id": "c14", "requires": ["design", "programming"], "project": "Design and build a single-page personal portfolio", "est_hours": 6}
+]

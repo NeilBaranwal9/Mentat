@@ -1,0 +1,293 @@
+[
+  {
+    "skill_name": "Sketching basics",
+    "domain": "Art",
+    "sampler_session": {
+      "title": "Draw your coffee mug three ways: outline, light shading, quick gesture",
+      "minutes": 20,
+      "steps": [
+        "Put a mug in front of you near a window",
+        "Draw only its outline in 5 minutes",
+        "Draw it again and shade the darkest side",
+        "Do three 1-minute gesture sketches",
+        "Circle the version you enjoyed most"
+      ],
+      "tiny_title": "Draw the mug outline once",
+      "tiny_minutes": 5
+    },
+    "styles": [
+      {"name": "Line drawing", "one_line": "Objects described with clean outlines only", "why_start_here": "Needs just a pencil and trains your eye fastest", "difficulty": 1, "min_cost_inr": 0},
+      {"name": "Gesture sketching", "one_line": "Fast loose drawings that capture movement", "why_start_here": "Quick sessions that fit any gap in the day", "difficulty": 1, "min_cost_inr": 0},
+      {"name": "Tonal shading", "one_line": "Light and shadow with pencil grades", "why_start_here": "Makes simple shapes look solid", "difficulty": 2, "min_cost_inr": 150},
+      {"name": "Urban sketching", "one_line": "Drawing streets and buildings on location", "why_start_here": "Uses perspective you will learn here", "difficulty": 2, "min_cost_inr": 200},
+      {"name": "Ink sketching", "one_line": "Pen drawings with hatching instead of erasing", "why_start_here": "Builds confident lines", "difficulty": 3, "min_cost_inr": 120}
+    ],
+    "mini_skills": [
+      {
+        "local_id": "m1", "name": "Confident lines and basic shapes", "order": 1, "prerequisite_local_ids": [], "est_hours": 2,
+        "activities": [
+          {"title": "Fill a page with straight lines, circles and ellipses drawn from the shoulder", "est_minutes": 20, "tiny_title": "One row of ten ellipses", "tiny_minutes": 5, "style_tag": "Line drawing"},
+          {"title": "Draw five household objects using only boxes, cylinders and spheres", "est_minutes": 30, "tiny_title": "One object built from simple shapes", "tiny_minutes": 8, "style_tag": "Line drawing"}
+        ],
+        "recall_questions": [
+          "Draw a cube, a cylinder and a sphere from memory in under two minutes",
+          "Which joint should drive long straight lines: wrist, elbow or shoulder?",
+          "Break a kettle into three basic shapes on paper"
+        ],
+        "teach_back_prompt": "Explain in about 3 sentences why drawing from the shoulder gives smoother lines."
+      },
+      {
+        "local_id": "m2", "name": "Observation and proportion", "order": 2, "prerequisite_local_ids": ["m1"], "est_hours": 3,
+        "activities": [
+          {"title": "Measure and draw a chair using your pencil as a ruler at arm's length", "est_minutes": 30, "tiny_title": "Measure one height-to-width ratio and mark it", "tiny_minutes": 6, "style_tag": "Line drawing"},
+          {"title": "Blind contour drawing of your hand, then a normal contour drawing", "est_minutes": 20, "tiny_title": "One blind contour of your hand", "tiny_minutes": 5, "style_tag": "Gesture sketching"}
+        ],
+        "recall_questions": [
+          "Show how you measure a proportion with a pencil held at arm's length",
+          "What is a blind contour drawing and why does it help?",
+          "Sketch a mug at the correct height-to-width ratio without measuring"
+        ],
+        "teach_back_prompt": "Teach a friend the pencil-measuring method in about 3 sentences."
+      },
+      {
+        "local_id": "m3", "name": "Light, shadow and value", "order": 3, "prerequisite_local_ids": ["m1"], "est_hours": 3,
+        "activities": [
+          {"title": "Make a five-step value scale, then shade a sphere with a cast shadow", "est_minutes": 30, "tiny_title": "A three-step value scale", "tiny_minutes": 5, "style_tag": "Tonal shading"},
+          {"title": "Shade an egg or fruit lit by one lamp", "est_minutes": 35, "tiny_title": "Shade only the dark side of the egg", "tiny_minutes": 8, "style_tag": "Tonal shading"}
+        ],
+        "recall_questions": [
+          "Name the parts of light on a sphere: highlight, core shadow, reflected light, cast shadow",
+          "Draw a value scale with five steps from memory",
+          "Where does the darkest part of a cast shadow sit?"
+        ],
+        "teach_back_prompt": "Explain the difference between a core shadow and a cast shadow in about 3 sentences."
+      },
+      {
+        "local_id": "m4", "name": "One- and two-point perspective", "order": 4, "prerequisite_local_ids": ["m2"], "est_hours": 3,
+        "activities": [
+          {"title": "Draw a hallway in one-point perspective with doors and a window", "est_minutes": 30, "tiny_title": "Horizon line, vanishing point and one box", "tiny_minutes": 7, "style_tag": "Urban sketching"},
+          {"title": "Draw a street corner building in two-point perspective", "est_minutes": 40, "tiny_title": "One box in two-point perspective", "tiny_minutes": 8, "style_tag": "Urban sketching"}
+        ],
+        "recall_questions": [
+          "Draw a box in one-point perspective from memory",
+          "What happens to the vanishing points when you look up at a tall building?",
+          "Where should the horizon line sit relative to your eye level?"
+        ],
+        "teach_back_prompt": "Explain one-point versus two-point perspective in about 3 sentences."
+      },
+      {
+        "local_id": "m5", "name": "Composition of a small scene", "order": 5, "prerequisite_local_ids": ["m3", "m4"], "est_hours": 2,
+        "activities": [
+          {"title": "Make three thumbnail layouts of your desk, then draw the best one", "est_minutes": 40, "tiny_title": "Three tiny thumbnails only", "tiny_minutes": 8, "style_tag": null}
+        ],
+        "recall_questions": [
+          "What is a thumbnail sketch for?",
+          "Sketch the rule-of-thirds grid and place a focal point on it",
+          "Name two ways to lead the eye to the focal point"
+        ],
+        "teach_back_prompt": "Explain why artists make thumbnails before a final drawing, in about 3 sentences."
+      }
+    ],
+    "capstone": {"title": "A shaded still life of three objects on your table", "description": "One finished drawing with correct proportions, perspective and at least four values of shading.", "est_hours": 3},
+    "total_hours_to_basic_competence": 17,
+    "resources": [
+      {"title": "Pencils HB, 2B and 6B", "kind": "tool", "est_cost_inr": 120, "free_alternative": "Any single pencil, pressing lighter or harder"},
+      {"title": "A5 sketchbook", "kind": "tool", "est_cost_inr": 150, "free_alternative": "Backs of used printer paper"}
+    ],
+    "assumptions": ["Assumes about 20-40 minute sessions", "Basic competence here means clear, proportioned drawings of simple objects, not mastery"]
+  },
+  {
+    "skill_name": "Probability basics",
+    "domain": "Mathematics",
+    "sampler_session": {
+      "title": "Roll a die 60 times and compare your counts with what theory predicts",
+      "minutes": 25,
+      "steps": [
+        "Predict how many times each face should appear in 60 rolls",
+        "Roll a die (or use a phone dice app offline) 60 times and tally",
+        "Compare each count with 10",
+        "Write one sentence on why the counts are not exactly equal"
+      ],
+      "tiny_title": "Roll 20 times and tally sixes",
+      "tiny_minutes": 7
+    },
+    "styles": [
+      {"name": "Counting and sample spaces", "one_line": "Listing outcomes carefully", "why_start_here": "Every later idea depends on it", "difficulty": 1, "min_cost_inr": 0},
+      {"name": "Experiments with dice and coins", "one_line": "Learning by simulation by hand", "why_start_here": "Builds intuition before formulas", "difficulty": 1, "min_cost_inr": 0},
+      {"name": "Conditional probability", "one_line": "Updating chances when you learn something", "why_start_here": "The most useful idea for real decisions", "difficulty": 2, "min_cost_inr": 0},
+      {"name": "Expected value", "one_line": "The long-run average of a game", "why_start_here": "Connects probability to choices", "difficulty": 2, "min_cost_inr": 0},
+      {"name": "Distributions", "one_line": "Binomial and normal shapes", "why_start_here": "Gateway to statistics", "difficulty": 3, "min_cost_inr": 0}
+    ],
+    "mini_skills": [
+      {
+        "local_id": "m1", "name": "Sample spaces and counting", "order": 1, "prerequisite_local_ids": [], "est_hours": 3,
+        "activities": [
+          {"title": "List the sample space for two dice and find the chance of each sum", "est_minutes": 30, "tiny_title": "Find the chance of rolling a sum of 7", "tiny_minutes": 6, "style_tag": "Counting and sample spaces"},
+          {"title": "Solve six permutation and combination problems with a written method", "est_minutes": 40, "tiny_title": "Solve one combination problem", "tiny_minutes": 8, "style_tag": "Counting and sample spaces"}
+        ],
+        "recall_questions": [
+          "How many outcomes are there when rolling two dice?",
+          "Write the formula for choosing k items from n when order does not matter",
+          "What is the chance of getting at least one head in three coin tosses?"
+        ],
+        "teach_back_prompt": "Explain the difference between permutations and combinations in about 3 sentences."
+      },
+      {
+        "local_id": "m2", "name": "Rules of probability", "order": 2, "prerequisite_local_ids": ["m1"], "est_hours": 3,
+        "activities": [
+          {"title": "Work through addition and multiplication rule problems with Venn diagrams", "est_minutes": 35, "tiny_title": "Draw one Venn diagram for two events", "tiny_minutes": 6, "style_tag": null},
+          {"title": "Check independence of events using a deck of cards", "est_minutes": 25, "tiny_title": "Decide if two card events are independent", "tiny_minutes": 7, "style_tag": "Experiments with dice and coins"}
+        ],
+        "recall_questions": [
+          "State the addition rule for two events that can overlap",
+          "When can you multiply probabilities directly?",
+          "What is the probability of the complement of an event A?"
+        ],
+        "teach_back_prompt": "Explain what independent events are, with one example, in about 3 sentences."
+      },
+      {
+        "local_id": "m3", "name": "Conditional probability and Bayes", "order": 3, "prerequisite_local_ids": ["m2"], "est_hours": 4,
+        "activities": [
+          {"title": "Solve four conditional probability problems using a two-way table", "est_minutes": 40, "tiny_title": "Fill one two-way table", "tiny_minutes": 8, "style_tag": "Conditional probability"},
+          {"title": "Work a Bayes rule problem with a tree diagram, then check with counts out of 1000", "est_minutes": 40, "tiny_title": "Draw the tree diagram only", "tiny_minutes": 8, "style_tag": "Conditional probability"}
+        ],
+        "recall_questions": [
+          "Write the formula for P(A given B)",
+          "Write Bayes rule from memory",
+          "Why is P(A given B) usually different from P(B given A)?"
+        ],
+        "teach_back_prompt": "Explain Bayes rule using a tree diagram in about 3 sentences."
+      },
+      {
+        "local_id": "m4", "name": "Random variables and expected value", "order": 4, "prerequisite_local_ids": ["m2"], "est_hours": 3,
+        "activities": [
+          {"title": "Compute the expected value and variance of a fair die and of a simple game", "est_minutes": 35, "tiny_title": "Expected value of one die roll", "tiny_minutes": 5, "style_tag": "Expected value"},
+          {"title": "Decide whether three small games are worth playing using expected value", "est_minutes": 30, "tiny_title": "Judge one game by its expected value", "tiny_minutes": 7, "style_tag": "Expected value"}
+        ],
+        "recall_questions": [
+          "What is the expected value of a fair six-sided die?",
+          "Write the formula for the variance of a discrete random variable",
+          "If a game costs 10 and pays 50 with chance one in six, is it worth playing in the long run?"
+        ],
+        "teach_back_prompt": "Explain what expected value means for a repeated game in about 3 sentences."
+      },
+      {
+        "local_id": "m5", "name": "Binomial and normal distributions", "order": 5, "prerequisite_local_ids": ["m1", "m4"], "est_hours": 4,
+        "activities": [
+          {"title": "Compute binomial probabilities for 10 coin tosses and sketch the distribution", "est_minutes": 40, "tiny_title": "Probability of exactly 5 heads in 10 tosses", "tiny_minutes": 8, "style_tag": "Distributions"},
+          {"title": "Use the 68-95-99.7 rule on three normal distribution questions", "est_minutes": 30, "tiny_title": "One question with the 68-95-99.7 rule", "tiny_minutes": 6, "style_tag": "Distributions"}
+        ],
+        "recall_questions": [
+          "Write the binomial probability formula",
+          "What are the mean and variance of a binomial distribution?",
+          "Roughly what share of a normal distribution lies within one standard deviation of the mean?"
+        ],
+        "teach_back_prompt": "Explain when a binomial distribution applies, in about 3 sentences."
+      }
+    ],
+    "capstone": {"title": "A one-page probability report on a game you invent", "description": "Design a simple dice or card game, compute its outcome probabilities and expected value, then play it 50 times and compare.", "est_hours": 3},
+    "total_hours_to_basic_competence": 20,
+    "resources": [
+      {"title": "A free introductory probability textbook", "kind": "free_material", "est_cost_inr": 0, "free_alternative": null},
+      {"title": "A pair of dice and a deck of cards", "kind": "kit", "est_cost_inr": 80, "free_alternative": "Paper slips in a cup"}
+    ],
+    "assumptions": ["Assumes comfort with fractions and basic algebra", "Basic competence means solving standard textbook problems, not research-level work"]
+  },
+  {
+    "skill_name": "SQL basics",
+    "domain": "Data",
+    "sampler_session": {
+      "title": "Create a tiny table of your expenses and ask it three questions",
+      "minutes": 25,
+      "steps": [
+        "Install a free offline SQL app or use an SQLite tool on a laptop",
+        "Create a table with date, item and amount columns",
+        "Insert ten rows from last week",
+        "Write queries for the total, the biggest item and spending per day"
+      ],
+      "tiny_title": "Create the table and insert three rows",
+      "tiny_minutes": 8
+    },
+    "styles": [
+      {"name": "SQLite on your own data", "one_line": "Small local databases you fully control", "why_start_here": "Free, offline and quick to set up", "difficulty": 1, "min_cost_inr": 0},
+      {"name": "Query puzzles", "one_line": "Short exercises with known answers", "why_start_here": "Fast feedback on each idea", "difficulty": 1, "min_cost_inr": 0},
+      {"name": "Data cleaning", "one_line": "Fixing messy imported tables", "why_start_here": "What real data work looks like", "difficulty": 2, "min_cost_inr": 0},
+      {"name": "Reporting queries", "one_line": "Grouped summaries for decisions", "why_start_here": "Turns tables into answers", "difficulty": 2, "min_cost_inr": 0},
+      {"name": "Schema design", "one_line": "Planning tables and keys", "why_start_here": "Prevents messy data later", "difficulty": 3, "min_cost_inr": 0}
+    ],
+    "mini_skills": [
+      {
+        "local_id": "m1", "name": "SELECT, WHERE and ORDER BY", "order": 1, "prerequisite_local_ids": [], "est_hours": 2,
+        "activities": [
+          {"title": "Write ten filtering and sorting queries on a sample students table", "est_minutes": 30, "tiny_title": "Write three filtering queries", "tiny_minutes": 8, "style_tag": "Query puzzles"},
+          {"title": "Use LIKE, IN and BETWEEN on your expenses table", "est_minutes": 25, "tiny_title": "One query with BETWEEN", "tiny_minutes": 5, "style_tag": "SQLite on your own data"}
+        ],
+        "recall_questions": [
+          "Write a query returning names of students older than 20, sorted by name",
+          "What is the difference between WHERE name LIKE 'A%' and WHERE name = 'A'?",
+          "In what order does SQL logically process FROM, WHERE and SELECT?"
+        ],
+        "teach_back_prompt": "Explain what WHERE does and how it differs from ORDER BY in about 3 sentences."
+      },
+      {
+        "local_id": "m2", "name": "Aggregates and GROUP BY", "order": 2, "prerequisite_local_ids": ["m1"], "est_hours": 3,
+        "activities": [
+          {"title": "Compute totals, averages and counts per category with GROUP BY and HAVING", "est_minutes": 35, "tiny_title": "One GROUP BY query with SUM", "tiny_minutes": 7, "style_tag": "Reporting queries"},
+          {"title": "Build a weekly spending report from your expenses table", "est_minutes": 30, "tiny_title": "Spending per day only", "tiny_minutes": 8, "style_tag": "SQLite on your own data"}
+        ],
+        "recall_questions": [
+          "What is the difference between WHERE and HAVING?",
+          "Write a query counting rows per category",
+          "Why must every non-aggregated column in SELECT appear in GROUP BY?"
+        ],
+        "teach_back_prompt": "Explain GROUP BY to a friend using a shopping list example, in about 3 sentences."
+      },
+      {
+        "local_id": "m3", "name": "Joins", "order": 3, "prerequisite_local_ids": ["m2"], "est_hours": 4,
+        "activities": [
+          {"title": "Create students and courses tables and practise INNER and LEFT joins", "est_minutes": 40, "tiny_title": "One INNER JOIN between two tables", "tiny_minutes": 8, "style_tag": "Query puzzles"},
+          {"title": "Find rows with no match using LEFT JOIN and IS NULL", "est_minutes": 30, "tiny_title": "One unmatched-rows query", "tiny_minutes": 7, "style_tag": "Query puzzles"}
+        ],
+        "recall_questions": [
+          "What does a LEFT JOIN return that an INNER JOIN does not?",
+          "Write a query listing students with their course names",
+          "How do you find students who are not enrolled in any course?"
+        ],
+        "teach_back_prompt": "Explain INNER versus LEFT JOIN with a two-table sketch in about 3 sentences."
+      },
+      {
+        "local_id": "m4", "name": "Changing data and table design", "order": 4, "prerequisite_local_ids": ["m1"], "est_hours": 3,
+        "activities": [
+          {"title": "Design a small library schema with primary and foreign keys, then create it", "est_minutes": 40, "tiny_title": "Sketch the tables and keys on paper", "tiny_minutes": 8, "style_tag": "Schema design"},
+          {"title": "Practise INSERT, UPDATE and DELETE safely using a transaction", "est_minutes": 25, "tiny_title": "One UPDATE inside a transaction", "tiny_minutes": 6, "style_tag": null}
+        ],
+        "recall_questions": [
+          "What is the job of a primary key?",
+          "What happens if you run UPDATE without a WHERE clause?",
+          "Write the statement that creates a table with an integer primary key"
+        ],
+        "teach_back_prompt": "Explain why foreign keys help keep data consistent, in about 3 sentences."
+      },
+      {
+        "local_id": "m5", "name": "Subqueries and cleaning messy data", "order": 5, "prerequisite_local_ids": ["m2", "m3"], "est_hours": 3,
+        "activities": [
+          {"title": "Answer five questions with subqueries and CTEs", "est_minutes": 40, "tiny_title": "One query using a CTE", "tiny_minutes": 8, "style_tag": "Query puzzles"},
+          {"title": "Clean an imported table: trim text, fix case and remove duplicates", "est_minutes": 35, "tiny_title": "Find duplicate rows only", "tiny_minutes": 7, "style_tag": "Data cleaning"}
+        ],
+        "recall_questions": [
+          "Write a query that finds rows above the average amount using a subquery",
+          "What does a WITH clause (CTE) let you do?",
+          "How do you find duplicate values in a column?"
+        ],
+        "teach_back_prompt": "Explain when a CTE is clearer than a nested subquery, in about 3 sentences."
+      }
+    ],
+    "capstone": {"title": "A personal expense tracker database with five saved report queries", "description": "Your own schema, a month of real data and five queries that answer questions you care about.", "est_hours": 4},
+    "total_hours_to_basic_competence": 19,
+    "resources": [
+      {"title": "SQLite (free database engine)", "kind": "tool", "est_cost_inr": 0, "free_alternative": null},
+      {"title": "A free SQL practice workbook", "kind": "free_material", "est_cost_inr": 0, "free_alternative": null}
+    ],
+    "assumptions": ["Assumes access to a laptop or an offline SQL app", "Basic competence means writing everyday queries confidently, not database administration"]
+  }
+]

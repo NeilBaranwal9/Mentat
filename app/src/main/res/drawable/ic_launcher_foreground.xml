@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stylised "P" with two skill nodes. 108dp adaptive canvas; artwork stays inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="@color/icon_fg"
+        android:pathData="M40,34h16a14,14 0,0 1,0 28h-8v12h-8z M48,42v12h8a6,6 0,0 0,0 -12z" />
+    <path
+        android:fillColor="@color/icon_accent"
+        android:pathData="M65,66a5,5 0,1 1,10 0a5,5 0,1 1,-10 0z" />
+    <path
+        android:fillColor="@color/icon_accent"
+        android:pathData="M67,52a3,3 0,1 1,6 0a3,3 0,1 1,-6 0z" />
+</vector>
