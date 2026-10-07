@@ -2,11 +2,11 @@
 -keepattributes *Annotation*, InnerClasses, Signature, Exceptions
 -dontnote kotlinx.serialization.**
 -keepclassmembers class kotlinx.serialization.json.** { *** Companion; }
--keepclasseswithmembers class com.polymath.os.** {
+-keepclasseswithmembers class com.mentat.os.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
--keep,includedescriptorclasses class com.polymath.os.**$$serializer { *; }
--keepclassmembers class com.polymath.os.** {
+-keep,includedescriptorclasses class com.mentat.os.**$$serializer { *; }
+-keepclassmembers class com.mentat.os.** {
     *** Companion;
 }
 

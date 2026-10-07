@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PolymathOS"
+rootProject.name = "MentatOS"
 include(":app")

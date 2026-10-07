@@ -12,11 +12,11 @@ plugins {
 val ciKeystore: File? = System.getenv("KEYSTORE_PATH")?.let { file(it) }?.takeIf { it.exists() && it.length() > 0 }
 
 android {
-    namespace = "com.polymath.os"
+    namespace = "com.mentat.os"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.polymath.os"
+        applicationId = "com.mentat.os"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -78,7 +78,7 @@ ksp {
 
 // Section 20.2: domain/ must stay free of Android imports.
 val checkDomainPurity by tasks.registering {
-    val domainDir = file("src/main/java/com/polymath/os/domain")
+    val domainDir = file("src/main/java/com/mentat/os/domain")
     inputs.dir(domainDir)
     doLast {
         val offenders = domainDir.walkTopDown()
