@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MentatOS"
+rootProject.name = "Mentat"
 include(":app")

@@ -22,7 +22,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:usesCleartextTraffic="false"
-        android:theme="@style/Theme.MentatOS"
+        android:theme="@style/Theme.Mentat"
         tools:targetApi="36">
 
         <activity

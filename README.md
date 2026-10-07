@@ -1,20 +1,20 @@
-# Mentat OS
+# Mentat
 
 A single-user, offline-first Android app for learning many short skills. A Groq-hosted LLM drafts an editable
 skill path **once**; from then on deterministic Kotlin code plans your day, tracks logs, schedules recall checks,
 spots struggles and asks you what to do. The AI never grades you, never schedules and never decides levels.
 All data stays on the phone; the only network traffic is to Groq, and only when you tap an AI button.
 
-Built from `MENTAT_OS_BUILD_SPEC.md` (v3.0). Gaps in the spec and how they were filled: `docs/DESIGN_DECISIONS.md`.
+Built from `MENTAT_BUILD_SPEC.md` (v3.0). Gaps in the spec and how they were filled: `docs/DESIGN_DECISIONS.md`.
 Library versions: `docs/VERSIONS.md`.
 
 ## Install the APK
 
-1. Copy `app-debug.apk` to the phone (or download the `mentat-os-debug-apk` artifact from GitHub Actions and unzip it).
+1. Copy `app-debug.apk` to the phone (or download the `mentat-debug-apk` artifact from GitHub Actions and unzip it).
 2. Open it and allow "Install unknown apps" for your file manager or browser.
-3. Open Mentat OS: paste your Groq key (optional at first), fill the short profile form, allow reminders,
+3. Open Mentat: paste your Groq key (optional at first), fill the short profile form, allow reminders,
    and add a starter skill or create your own.
-4. OnePlus / OxygenOS: Settings > Apps > Mentat OS > Battery > Don't optimize, allow background activity,
+4. OnePlus / OxygenOS: Settings > Apps > Mentat > Battery > Don't optimize, allow background activity,
    and lock the app in recents so reminders arrive on time.
 
 ## Build

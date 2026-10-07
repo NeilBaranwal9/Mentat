@@ -12,11 +12,11 @@ plugins {
 val ciKeystore: File? = System.getenv("KEYSTORE_PATH")?.let { file(it) }?.takeIf { it.exists() && it.length() > 0 }
 
 android {
-    namespace = "com.mentat.os"
+    namespace = "com.mentat"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.mentat.os"
+        applicationId = "com.mentat"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -78,7 +78,7 @@ ksp {
 
 // Section 20.2: domain/ must stay free of Android imports.
 val checkDomainPurity by tasks.registering {
-    val domainDir = file("src/main/java/com/mentat/os/domain")
+    val domainDir = file("src/main/java/com/mentat/domain")
     inputs.dir(domainDir)
     doLast {
         val offenders = domainDir.walkTopDown()

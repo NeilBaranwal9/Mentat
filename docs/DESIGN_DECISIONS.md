@@ -1,6 +1,6 @@
 # Design gaps filled
 
-The build spec (`MENTAT_OS_BUILD_SPEC.md`) left these points open or ambiguous. Each decision below is the
+The build spec (`MENTAT_BUILD_SPEC.md`) left these points open or ambiguous. Each decision below is the
 smallest choice that keeps the spec's rules intact. Nothing in Sections 1, 2 or 4 was changed, except the
 StrictMode refinement (gap 1), which is flagged for your review.
 

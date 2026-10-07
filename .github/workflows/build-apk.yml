@@ -30,7 +30,7 @@ jobs:
             echo "Possible static context holder"; exit 1; fi
       - name: Domain purity scan
         run: |
-          if grep -rEn "^import android" app/src/main/java/com/mentat/os/domain; then echo "Android import in domain/"; exit 1; fi
+          if grep -rEn "^import android" app/src/main/java/com/mentat/domain; then echo "Android import in domain/"; exit 1; fi
       - name: Build debug APK
         run: ./gradlew assembleDebug
         env:
@@ -44,5 +44,5 @@ jobs:
           if grep -rIl "gsk_" apk_x; then echo "Groq key pattern found in APK"; exit 1; fi
       - uses: actions/upload-artifact@v4
         with:
-          name: mentat-os-debug-apk
+          name: mentat-debug-apk
           path: app/build/outputs/apk/debug/*.apk
